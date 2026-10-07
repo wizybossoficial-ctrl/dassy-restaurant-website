@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DASSY — Comida saudável em Bissau</title>
+  <meta name="description" content="DASSY: receitas contemporâneas com produtos naturais e saudáveis, na Rua Vitorino Costa, Bissau, perto da Universidade Lusófona.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="logo">DASSY<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Sobre</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contacto</a>
+        <a href="#contact" class="btn btn-small">Takeaway</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Bissau · Guiné-Bissau</p>
+          <h1>Comer bem, <em>sabe bem.</em></h1>
+          <p class="lead">Receitas contemporâneas feitas com sabores locais e ingredientes naturais — frescas, leves e cheias de vida.</p>
+          <div class="cta">
+            <a href="#menu" class="btn">Explorar Menu</a>
+            <a href="#contact" class="btn btn-outline">Encomendar Takeaway</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="bowl">🥗</div>
+          <span class="chip c1">🥑 Natural</span>
+          <span class="chip c2">🐟 Fresco</span>
+          <span class="chip c3">🌿 Local</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow">Sobre nós</p>
+          <h2>Receitas contemporâneas, produtos naturais</h2>
+        </div>
+        <div class="reveal">
+          <p>O DASSY nasceu para provar que comida saudável pode ser deliciosa. Cozinhamos receitas contemporâneas com produtos naturais e saudáveis, privilegiando ingredientes frescos e o melhor da nossa terra.</p>
+          <p>Encontra-nos na Rua Vitorino Costa, perto da Universidade Lusófona, em Bissau — o sítio ideal para uma pausa leve entre aulas, trabalho ou passeio.</p>
+          <ul class="values">
+            <li><strong>100%</strong> ingredientes naturais</li>
+            <li><strong>Local</strong> sabores da Guiné-Bissau</li>
+            <li><strong>Fresco</strong> preparado ao momento</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Menu</p>
+          <h2>Destaques da casa</h2>
+          <p>Uma seleção dos nossos pratos mais queridos. Preços e descrições finais em breve.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal"><div class="card-icon">🥗</div><span class="tag">Bowls</span><h3>Bowl Dassy</h3><p>Descrição do prato — grãos, vegetais frescos e molho da casa.</p><div class="price">00.000 FCFA</div></article>
+          <article class="card reveal"><div class="card-icon">🥑</div><span class="tag">Bowls</span><h3>Bowl Verde</h3><p>Descrição do prato — folhas, abacate, sementes e limão.</p><div class="price">00.000 FCFA</div></article>
+          <article class="card reveal"><div class="card-icon">🍠</div><span class="tag">Sabores locais</span><h3>Prato Tradicional</h3><p>Descrição do prato — receita local numa versão leve e contemporânea.</p><div class="price">00.000 FCFA</div></article>
+          <article class="card reveal"><div class="card-icon">🥭</div><span class="tag">Sabores locais</span><h3>Frescura Tropical</h3><p>Descrição — frutas da época, sumos e smoothies naturais.</p><div class="price">00.000 FCFA</div></article>
+          <article class="card reveal"><div class="card-icon">🐟</div><span class="tag">Marisco &amp; Peixe</span><h3>Peixe Grelhado</h3><p>Descrição do prato — peixe fresco grelhado com legumes salteados.</p><div class="price">00.000 FCFA</div></article>
+          <article class="card reveal"><div class="card-icon">🦐</div><span class="tag">Marisco &amp; Peixe</span><h3>Camarão da Casa</h3><p>Descrição do prato — camarão temperado com ervas e limão.</p><div class="price">00.000 FCFA</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Visite-nos</p>
+          <h2>Localização &amp; contacto</h2>
+          <address>
+            <strong>DASSY</strong><br>
+            Rua Vitorino Costa<br>
+            Bissau, Guiné-Bissau<br>
+            <small>Perto da Universidade Lusófona</small>
+          </address>
+          <ul class="contact-list">
+            <li><span>Takeaway</span><a href="tel:+245000000000">+245 000 000 000</a></li>
+            <li><span>Entregas</span><a href="tel:+245000000000">+245 000 000 000</a></li>
+            <li><span>Horário</span>Seg – Sáb · 00:00 – 00:00</li>
+          </ul>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Vitorino+Costa+Bissau+Guin%C3%A9-Bissau" target="_blank" rel="noopener" class="btn">Ver no mapa</a>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa da localização do DASSY em Bissau" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Rua+Vitorino+Costa+Bissau+Guin%C3%A9-Bissau&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">DASSY<span>.</span></a>
+      <p>&copy; <span id="year">2026</span> DASSY. Todos os direitos reservados.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="WhatsApp">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
