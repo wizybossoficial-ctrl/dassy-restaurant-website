@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
@@ -22,29 +22,21 @@
         <a href="#about">Sobre</a>
         <a href="#menu">Menu</a>
         <a href="#contact">Contacto</a>
-        <a href="#contact" class="btn btn-small">Takeaway</a>
+        <button type="button" class="btn btn-small" data-open-modal="takeaway">Takeaway</button>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero" id="home" style="--hero-img: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&q=75&w=1800')">
       <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Bissau · Guiné-Bissau</p>
-          <h1>Comer bem, <em>sabe bem.</em></h1>
-          <p class="lead">Receitas contemporâneas feitas com sabores locais e ingredientes naturais — frescas, leves e cheias de vida.</p>
-          <div class="cta">
-            <a href="#menu" class="btn">Explorar Menu</a>
-            <a href="#contact" class="btn btn-outline">Encomendar Takeaway</a>
-          </div>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="blob"></div>
-          <div class="bowl">🥗</div>
-          <span class="chip c1">🥑 Natural</span>
-          <span class="chip c2">🐟 Fresco</span>
-          <span class="chip c3">🌿 Local</span>
+        <p class="eyebrow">Bissau · Guiné-Bissau</p>
+        <h1>Comer bem, <em>sabe bem.</em></h1>
+        <p class="lead">Receitas contemporâneas feitas com sabores locais e ingredientes naturais — frescas, leves e cheias de vida.</p>
+        <div class="cta">
+          <a href="#menu" class="btn btn-light">Explorar Menu</a>
+          <button type="button" class="btn btn-outline-light" data-open-modal="takeaway">Encomendar Takeaway</button>
+          <button type="button" class="btn btn-outline-light" data-open-modal="reserve">Reservar Mesa</button>
         </div>
       </div>
     </section>
@@ -65,6 +57,12 @@
           </ul>
         </div>
       </div>
+    <div class="container gallery reveal">
+        <figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=75&w=400" srcset="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=75&w=400 400w, https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 700px) 50vw, 270px" alt="Interior do restaurante" loading="lazy" width="800" height="600"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=75&w=400" srcset="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=75&w=400 400w, https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 700px) 50vw, 270px" alt="Ambiente acolhedor" loading="lazy" width="800" height="600"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=75&w=400" srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=75&w=400 400w, https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 700px) 50vw, 270px" alt="Prato servido à mesa" loading="lazy" width="800" height="600"></figure>
+        <figure><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=75&w=400" srcset="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=75&w=400 400w, https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 700px) 50vw, 270px" alt="Refeição saudável" loading="lazy" width="800" height="600"></figure>
+      </div>
     </section>
 
     <section class="menu" id="menu">
@@ -74,13 +72,49 @@
           <h2>Destaques da casa</h2>
           <p>Uma seleção dos nossos pratos mais queridos. Preços e descrições finais em breve.</p>
         </div>
-        <div class="grid">
-          <article class="card reveal"><div class="card-icon">🥗</div><span class="tag">Bowls</span><h3>Bowl Dassy</h3><p>Descrição do prato — grãos, vegetais frescos e molho da casa.</p><div class="price">00.000 FCFA</div></article>
-          <article class="card reveal"><div class="card-icon">🥑</div><span class="tag">Bowls</span><h3>Bowl Verde</h3><p>Descrição do prato — folhas, abacate, sementes e limão.</p><div class="price">00.000 FCFA</div></article>
-          <article class="card reveal"><div class="card-icon">🍠</div><span class="tag">Sabores locais</span><h3>Prato Tradicional</h3><p>Descrição do prato — receita local numa versão leve e contemporânea.</p><div class="price">00.000 FCFA</div></article>
-          <article class="card reveal"><div class="card-icon">🥭</div><span class="tag">Sabores locais</span><h3>Frescura Tropical</h3><p>Descrição — frutas da época, sumos e smoothies naturais.</p><div class="price">00.000 FCFA</div></article>
-          <article class="card reveal"><div class="card-icon">🐟</div><span class="tag">Marisco &amp; Peixe</span><h3>Peixe Grelhado</h3><p>Descrição do prato — peixe fresco grelhado com legumes salteados.</p><div class="price">00.000 FCFA</div></article>
-          <article class="card reveal"><div class="card-icon">🦐</div><span class="tag">Marisco &amp; Peixe</span><h3>Camarão da Casa</h3><p>Descrição do prato — camarão temperado com ervas e limão.</p><div class="price">00.000 FCFA</div></article>
+        <div class="filters" role="tablist" aria-label="Categorias do menu">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter" data-filter="bowls" role="tab" aria-selected="false">Bowls Saudáveis</button>
+          <button class="filter" data-filter="fresh" role="tab" aria-selected="false">Sabores Frescos</button>
+          <button class="filter" data-filter="drinks" role="tab" aria-selected="false">Bebidas</button>
+        </div>
+        <div class="grid" id="menuGrid">
+          <article class="card reveal" data-category="bowls">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Bowl saudável com vegetais frescos" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Bowls</span><h3>Bowl Dassy</h3><p>Grãos, vegetais frescos e molho da casa.</p><div class="price">00.000 FCFA</div></div>
+          </article>
+          <article class="card reveal" data-category="bowls">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Bowl verde com abacate e folhas" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Bowls</span><h3>Bowl Verde</h3><p>Folhas, abacate, sementes e limão.</p><div class="price">00.000 FCFA</div></div>
+          </article>
+          <article class="card reveal" data-category="bowls">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Bowl tropical colorido" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Bowls</span><h3>Bowl Tropical</h3><p>Frutas da época, granola e mel natural.</p><div class="price">00.000 FCFA</div></div>
+          </article>
+          <article class="card reveal" data-category="fresh">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Salada fresca de legumes" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Sabores frescos</span><h3>Salada Fresca</h3><p>Legumes crocantes e ervas da horta.</p><div class="price">00.000 FCFA</div></div>
+          </article>
+          <article class="card reveal" data-category="fresh">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Peixe grelhado com legumes" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Peixe & marisco</span><h3>Peixe Grelhado</h3><p>Peixe fresco grelhado com legumes salteados.</p><div class="price">00.000 FCFA</div></div>
+          </article>
+          <article class="card reveal" data-category="fresh">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Prato de marisco" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Peixe & marisco</span><h3>Camarão da Casa</h3><p>Camarão temperado com ervas e limão.</p><div class="price">00.000 FCFA</div></div>
+          </article>
+          <article class="card reveal" data-category="drinks">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Sumo de fruta natural" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Bebidas</span><h3>Sumo Natural</h3><p>Fruta fresca espremida na hora.</p><div class="price">00.000 FCFA</div></div>
+          </article>
+          <article class="card reveal" data-category="drinks">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Smoothie verde" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Bebidas</span><h3>Smoothie Verde</h3><p>Espinafres, manga e gengibre.</p><div class="price">00.000 FCFA</div></div>
+          </article>
+          <article class="card reveal" data-category="drinks">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Sumo de laranja natural" loading="lazy" width="800" height="600"></div>
+            <div class="card-body"><span class="tag">Bebidas</span><h3>Refresco da Casa</h3><p>Infusão fria de ervas e citrinos.</p><div class="price">00.000 FCFA</div></div>
+          </article>
         </div>
       </div>
     </section>
@@ -101,7 +135,8 @@
             <li><span>Entregas</span><a href="tel:+245000000000">+245 000 000 000</a></li>
             <li><span>Horário</span>Seg – Sáb · 00:00 – 00:00</li>
           </ul>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Vitorino+Costa+Bissau+Guin%C3%A9-Bissau" target="_blank" rel="noopener" class="btn">Ver no mapa</a>
+          <div class="cta"><button type="button" class="btn" data-open-modal="takeaway">Encomendar Takeaway</button> <button type="button" class="btn btn-outline" data-open-modal="reserve">Reservar Mesa</button></div>
+          <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Vitorino+Costa+Bissau+Guin%C3%A9-Bissau" target="_blank" rel="noopener">Ver no mapa →</a>
         </div>
         <div class="map reveal">
           <iframe title="Mapa da localização do DASSY em Bissau" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -123,6 +158,36 @@
     </div>
   </footer>
 
+  <dialog class="modal" id="orderModal" aria-labelledby="modalTitle">
+    <form method="dialog" class="modal-form" id="orderForm" novalidate>
+      <button type="button" class="modal-close" data-close-modal aria-label="Fechar">&times;</button>
+      <h2 id="modalTitle">Fazer pedido</h2>
+      <div class="segmented" role="tablist">
+        <button type="button" data-mode="takeaway" role="tab">Takeaway</button>
+        <button type="button" data-mode="reserve" role="tab">Reservar mesa</button>
+      </div>
+      <label>Nome<input name="name" required autocomplete="name"></label>
+      <label>Telefone<input name="phone" type="tel" required autocomplete="tel" placeholder="+245 ..."></label>
+      <div class="row">
+        <label>Data<input name="date" type="date" required></label>
+        <label>Hora<input name="time" type="time" required></label>
+      </div>
+      <label data-only="reserve">Nº de pessoas<input name="guests" type="number" min="1" max="20" value="2"></label>
+      <label data-only="takeaway">O seu pedido<textarea name="notes" rows="3" placeholder="Ex.: 1x Bowl Dassy, 1x Sumo Natural"></textarea></label>
+      <p class="form-error" id="formError" role="alert" hidden></p>
+      <button type="submit" class="btn btn-block" id="submitBtn">Enviar pedido</button>
+      <div class="success" id="formSuccess" hidden>
+        <div class="check">✓</div>
+        <h3>Obrigado!</h3>
+        <p id="successMsg"></p>
+        <button type="button" class="btn" data-close-modal>Fechar</button>
+      </div>
+    </form>
+  </dialog>
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
