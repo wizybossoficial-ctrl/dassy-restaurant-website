@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DASSY — Comida saudável em Bissau</title>
   <meta name="description" content="DASSY: receitas contemporâneas com produtos naturais e saudáveis, na Rua Vitorino Costa, Bissau, perto da Universidade Lusófona.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
   <header class="header" id="header">
     <div class="container nav">
-      <a href="#home" class="logo">DASSY<span>.</span></a>
+      <a href="#home" class="logo" aria-label="DASSY Restaurante &amp; Garden Bar"><img class="logo-img logo-on-dark" src="images/logo-light.png" alt="DASSY Restaurante &amp; Garden Bar" width="478" height="211"><img class="logo-img logo-on-light" src="images/logo-transparent.png" alt="" width="478" height="211"></a>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
@@ -28,7 +28,7 @@
   </header>
 
   <main>
-    <section class="hero" id="home" style="--hero-img: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&q=75&w=1800')">
+    <section class="hero" id="home" style="--hero-img: url('images/mesa-grupo.jpg')">
       <div class="container hero-inner">
         <p class="eyebrow">Bissau · Guiné-Bissau</p>
         <h1>Comer bem, <em>sabe bem.</em></h1>
@@ -58,10 +58,10 @@
         </div>
       </div>
     <div class="container gallery reveal">
-        <figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=75&w=400" srcset="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=75&w=400 400w, https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 700px) 50vw, 270px" alt="Interior do restaurante" loading="lazy" width="800" height="600"></figure>
-        <figure><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=75&w=400" srcset="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=75&w=400 400w, https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 700px) 50vw, 270px" alt="Ambiente acolhedor" loading="lazy" width="800" height="600"></figure>
-        <figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=75&w=400" srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=75&w=400 400w, https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 700px) 50vw, 270px" alt="Prato servido à mesa" loading="lazy" width="800" height="600"></figure>
-        <figure><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=75&w=400" srcset="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=75&w=400 400w, https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 700px) 50vw, 270px" alt="Refeição saudável" loading="lazy" width="800" height="600"></figure>
+        <figure><img src="images/terraco.jpg" alt="Terraço do restaurante visto de cima" loading="lazy" width="1284" height="757"></figure>
+        <figure><img src="images/mesa-terraco.jpg" alt="Clientes à mesa no terraço" loading="lazy" width="1284" height="779"></figure>
+        <figure><img src="images/cozinha.jpg" alt="Equipa na cozinha a preparar os pratos" loading="lazy" width="1166" height="2048"></figure>
+        <figure><img src="images/aerea-2.jpg" alt="Vista aérea do restaurante à noite" loading="lazy" width="1284" height="786"></figure>
       </div>
     </section>
 
@@ -80,40 +80,28 @@
         </div>
         <div class="grid" id="menuGrid">
           <article class="card reveal" data-category="bowls">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Bowl saudável com vegetais frescos" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Bowls</span><h3>Bowl Dassy</h3><p>Grãos, vegetais frescos e molho da casa.</p><div class="price">00.000 FCFA</div></div>
+            <div class="card-img"><img src="images/arroz.jpg" alt="Arroz da casa servido em tacho" loading="lazy" width="1284" height="1847"></div>
+            <div class="card-body"><span class="tag">Pratos</span><h3>Arroz da Casa</h3><p>Arroz temperado com ervas frescas.</p><div class="price">00.000 FCFA</div></div>
           </article>
           <article class="card reveal" data-category="bowls">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Bowl verde com abacate e folhas" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Bowls</span><h3>Bowl Verde</h3><p>Folhas, abacate, sementes e limão.</p><div class="price">00.000 FCFA</div></div>
-          </article>
-          <article class="card reveal" data-category="bowls">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Bowl tropical colorido" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Bowls</span><h3>Bowl Tropical</h3><p>Frutas da época, granola e mel natural.</p><div class="price">00.000 FCFA</div></div>
+            <div class="card-img"><img src="images/caldo.jpg" alt="Caldo quente com legumes e malagueta" loading="lazy" width="1284" height="1724"></div>
+            <div class="card-body"><span class="tag">Pratos</span><h3>Caldo da Casa</h3><p>Caldo quente com legumes e malagueta.</p><div class="price">00.000 FCFA</div></div>
           </article>
           <article class="card reveal" data-category="fresh">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Salada fresca de legumes" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Sabores frescos</span><h3>Salada Fresca</h3><p>Legumes crocantes e ervas da horta.</p><div class="price">00.000 FCFA</div></div>
+            <div class="card-img"><img src="images/croquetes.jpg" alt="Croquetes servidos com molho" loading="lazy" width="1283" height="1420"></div>
+            <div class="card-body"><span class="tag">Sabores frescos</span><h3>Croquetes</h3><p>Croquetes dourados com molho da casa.</p><div class="price">00.000 FCFA</div></div>
           </article>
           <article class="card reveal" data-category="fresh">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Peixe grelhado com legumes" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Peixe & marisco</span><h3>Peixe Grelhado</h3><p>Peixe fresco grelhado com legumes salteados.</p><div class="price">00.000 FCFA</div></div>
-          </article>
-          <article class="card reveal" data-category="fresh">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Prato de marisco" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Peixe & marisco</span><h3>Camarão da Casa</h3><p>Camarão temperado com ervas e limão.</p><div class="price">00.000 FCFA</div></div>
+            <div class="card-img"><img src="images/caril.jpg" alt="Caril com ervas frescas" loading="lazy" width="1284" height="1852"></div>
+            <div class="card-body"><span class="tag">Sabores frescos</span><h3>Caril da Casa</h3><p>Caril aromático com legumes e ervas frescas.</p><div class="price">00.000 FCFA</div></div>
           </article>
           <article class="card reveal" data-category="drinks">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Sumo de fruta natural" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Bebidas</span><h3>Sumo Natural</h3><p>Fruta fresca espremida na hora.</p><div class="price">00.000 FCFA</div></div>
+            <div class="card-img"><img src="images/cocktail-margarita.jpg" alt="Cocktail de fruta com fatia de ananás" loading="lazy" width="1284" height="1341"></div>
+            <div class="card-body"><span class="tag">Bebidas</span><h3>Cocktail Tropical</h3><p>Cocktail de fruta servido fresco.</p><div class="price">00.000 FCFA</div></div>
           </article>
           <article class="card reveal" data-category="drinks">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1610970881699-44a5587cabec?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Smoothie verde" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Bebidas</span><h3>Smoothie Verde</h3><p>Espinafres, manga e gengibre.</p><div class="price">00.000 FCFA</div></div>
-          </article>
-          <article class="card reveal" data-category="drinks">
-            <div class="card-img"><img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=75&w=480" srcset="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=75&w=480 480w, https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&q=75&w=800 800w" sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 360px" alt="Sumo de laranja natural" loading="lazy" width="800" height="600"></div>
-            <div class="card-body"><span class="tag">Bebidas</span><h3>Refresco da Casa</h3><p>Infusão fria de ervas e citrinos.</p><div class="price">00.000 FCFA</div></div>
+            <div class="card-img"><img src="images/cocktail-dark.jpg" alt="Cocktail de maracujá com rebordo de sal" loading="lazy" width="1284" height="1338"></div>
+            <div class="card-body"><span class="tag">Bebidas</span><h3>Cocktail da Casa</h3><p>Cocktail cítrico com rebordo temperado.</p><div class="price">00.000 FCFA</div></div>
           </article>
         </div>
       </div>
@@ -148,7 +136,7 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <a href="#home" class="logo">DASSY<span>.</span></a>
+      <a href="#home" class="logo" aria-label="DASSY Restaurante &amp; Garden Bar"><img class="logo-img" src="images/logo-light.png" alt="DASSY Restaurante &amp; Garden Bar" width="478" height="211" loading="lazy"></a>
       <p>&copy; <span id="year">2026</span> DASSY. Todos os direitos reservados.</p>
       <div class="social">
         <a href="#" aria-label="Instagram">Instagram</a>
