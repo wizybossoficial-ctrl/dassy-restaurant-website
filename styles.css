@@ -84,7 +84,7 @@ img { max-width: 100%; height: auto; }
 /* Menu */
 .section-head { text-align: center; max-width: 36rem; margin: 0 auto 3rem; }
 .section-head p:last-child { color: var(--muted); margin-top: .8rem; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
 .card { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); transition: transform .3s, box-shadow .3s; display: flex; flex-direction: column; }
 .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(31, 58, 43, .16); }
 .tag { align-self: flex-start; font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; color: var(--green-700); background: var(--cream-dark); padding: .2rem .7rem; border-radius: 999px; margin-bottom: .7rem; }
@@ -173,6 +173,11 @@ address small { color: var(--muted); }
 body.modal-open { overflow: hidden; }
 
 @media (max-width: 860px) {
+  .grid { gap: 1rem; }
+  .card-body { padding: 1rem 1rem 1.2rem; }
+  .card h3 { font-size: 1.1rem; }
+  .card p { font-size: .88rem; }
+  .price { margin-top: .7rem; font-size: .95rem; }
   .menu-toggle { display: block; }
   .nav-links { position: fixed; inset: 72px 0 auto 0; flex-direction: column; gap: 1.2rem; padding: 1.5rem; background: var(--cream); box-shadow: 0 20px 30px rgba(0, 0, 0, .08); transform: translateY(-120%); visibility: hidden; transition: transform .35s, visibility .35s; }
   .nav-links.open { transform: none; visibility: visible; }
@@ -186,6 +191,12 @@ body.modal-open { overflow: hidden; }
   .footer .logo { justify-content: center; max-width: 100%; }
 }
 @media (max-width: 480px) {
+  .grid { gap: .75rem; }
+  .card-body { padding: .8rem .8rem 1rem; }
+  .card h3 { font-size: 1rem; }
+  .card p { font-size: .8rem; line-height: 1.45; }
+  .tag { font-size: .62rem; padding: .15rem .55rem; margin-bottom: .5rem; }
+  .price { font-size: .85rem; }
   .logo-img { height: 46px; }
   .footer .logo-img { height: 54px; }
   .values { grid-template-columns: 1fr; }
